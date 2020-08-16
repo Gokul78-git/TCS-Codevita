@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index|Codevita Season 9</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="leftpane">
+            <img src="images/cv_logo.png" alt="" width="170px">
+        </div>
+        <div class="rightpane">
+            <img src="images/tcs_logo.png" alt="" width="250px">
+        </div>
+    </header>
+    <section class="navigationbar"> 
+            <span class="text">About CodeVita</span>
+            <span class="text">Sample Questions</span>
+            <span class="text">Self Help Trivia</span>
+            <span class="text">Fun Gallery</span>
+            <span class="text">Contact Us</span>
+            <span class="text">Hall of Fame</span>
+    </section>
+
+    <section class="heropage">
+        <h2 class="welcometag">Welcome to CodeVita Season 9</h2>
+        <h6 class="globalcoding">---The TCS Global Coding Contest---</h6><br>
+        <a class="loginbutton" href="#">Login</a>
+    </section>
+    
+    <section class="duration">
+        <strong>Round 1 Zone 2 (Chennai, Delhi, Kolkata, Mumbai) starts from 3:00 P.M IST 15th Aug 2020(Sat) to 3:00 P.M IST 16th Aug 2020(Sun)</strong><br>
+        <div>Your Mapping to the zone is done as per the branch details on your initial registration form and is final</div><br><br>   
+        <div>To find out about zone 1 updates click on <a href="#"> CV9 Zone 1 Statistics</a></div>
+    </section>
+
+    <section class="secondpage">
+        <div class="quote">Code. Build. Compete. Participate in CodeVita Season 9</div>
+        <div class="container">
+            <img src="images/rupee.jpg" alt="" width="80px" >
+            <h6 class="textjs prizecount">20000</h6><div class="ctext">$ prize money</div>
+        </div>
+        <div class="container">
+            <img src="images/regestration.png" alt="" width="60px" >
+            <h6 class="textjs registrationcount">220000</h6><div class="ctext">+ Registrations</div>
+        </div>
+        <div class="container">
+            <img src="images/duration.png" alt="" width="80px">
+            <h6 class="textjs durationcount">6</h6><div class="ctext">hrs prove your best</div>
+        </div>
+    </section>
+
+    <section class="tcsvideo">
+        <iframe width="60%" height="500px" src="https://www.youtube.com/embed/MIfMJ0ZqL-k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section class="tcssocial">
+        <div class="connectwith">connect with us</div>
+            <ion-icon class="sociallogo" name="logo-facebook"></ion-icon>
+            <ion-icon class="sociallogo" name="logo-instagram"></ion-icon>
+            <ion-icon class="sociallogo" name="logo-twitter"></ion-icon>
+            <ion-icon class="sociallogo" name="logo-linkedin"></ion-icon>
+            <ion-icon class="sociallogo" name="logo-youtube"></ion-icon>
+    </section>
+
+    <section class="tcsfooter">
+        <div class="footertext">Codevita FAQ</div>
+        <div class="footertext">Privacy Policy</div>
+        <div class="footertext">Careers</div>
+    </section>
+</body>
+</html>
+
+<script>
+    function rout(target,classa,speed,inc){
+     var target1 = target;
+     var current1=0;
+        function execute1(){
+        if(current1 < target1){
+            current1 = current1+inc;
+            document.querySelector(classa).innerText=current1;
+            setTimeout(execute1,speed);
+        }
+        }
+        execute1();
+    }
+    rout(20000,".prizecount",0,10);
+    rout(220000,".registrationcount",0,100);
+    rout(6,".durationcount",1000,1);
+    </script>
